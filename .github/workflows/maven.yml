@@ -31,7 +31,7 @@ jobs:
           ${{ runner.os }}-m2
 
     - name: Build with Maven
-      run: ./mvnw -ntp verify
+      run: mvn -ntp verify
       env:
         MAVEN_ARGS: -V -B -e
 
