@@ -64,8 +64,9 @@ public class EntityPlayerNPC {
 				return;
 			}
 			
-			SkinnableEntity skinnable = (SkinnableEntity) getPlayer();
-			skinnable.setSkinName(setSkinName, true);
+			if (getPlayer() instanceof SkinnableEntity skinnable) {
+				skinnable.setSkinName(setSkinName, true);
+			}
 		}, Ticks.ONE);
 		
 		// Default skin is the name of the player.
