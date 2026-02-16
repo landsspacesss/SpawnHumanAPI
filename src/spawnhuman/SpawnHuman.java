@@ -145,7 +145,7 @@ public class SpawnHuman extends JavaPlugin {
 					}
 				}
 			}
-		}, 1, 1);
+		}, 1L, 1L);
 		
 		this.getCommand("npcamt").setExecutor(new CommandExecutor() {
 			@Override

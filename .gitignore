@@ -1,3 +1,31 @@
-/bin/
-.project
-.classpath
+```
+# Compiled and build artifacts
+*.class
+target/
+
+# Dependencies
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build directories
+build/
+dist/
+```
